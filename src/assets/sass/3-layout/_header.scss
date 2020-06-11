@@ -1,10 +1,56 @@
 .header {
   position: relative;
-  z-index: 10;
   height: 80px;
   background-color: $dark-green;
 
   &__nav > .nav > ul > li > a {
     font-weight: $font-header !important;
+  }
+
+  &__hamburger {
+    width: 30px;
+    height: 28px;
+    position: relative;
+    z-index: 102 !important;
+
+    &.active {
+      div {
+        background-color: $green;
+
+        &::before {
+          top: 50%;
+          transform: translateY(-50%) rotate(45deg);
+        }
+        &::after {
+          bottom: 50%;
+          transform: translateY(50%) rotate(-45deg);
+        }
+      }
+    }
+
+    div {
+      width: 100%;
+      height: 5px;
+      background-color: $light-grey;
+      transition: all 0.3s ease-in-out;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 5px;
+        background-color: $light-grey;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+    }
   }
 }

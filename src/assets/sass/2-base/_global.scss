@@ -1,5 +1,11 @@
 body {
   font-family: $font-stack;
+  position: relative;
+  width: 100%;
+
+  &.fixed {
+    position: fixed;
+  }
 }
 
 a {

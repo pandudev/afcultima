@@ -19,11 +19,6 @@ function showSlide(n) {
     .children(".slider__item")
     .eq(slideIndex - 1)
     .removeClass("d-none");
-
-  setTimeout(() => {
-    slideIndex++;
-    showSlide(slideIndex);
-  }, 10000);
 }
 
 function backSlide() {
@@ -42,5 +37,11 @@ $(document).ready(function () {
   });
   $("#slider1_next").click(function () {
     nextSlide();
+  });
+
+  $("#hamburger").click(function () {
+    $(this).toggleClass("active");
+    $(".mobile-menu").toggleClass("show");
+    $("body").toggleClass("fixed");
   });
 });

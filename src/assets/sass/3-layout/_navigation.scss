@@ -18,6 +18,30 @@
     }
   }
 
+  &--mobile {
+    background-color: $green;
+    height: 100vh;
+
+    ul {
+      height: 80%;
+      width: 100%;
+
+      li {
+        width: 100%;
+        text-align: center;
+        display: flex;
+
+        a {
+          padding: 15px;
+          flex: 1;
+          font-size: 20px;
+          font-weight: 600;
+          color: $light-grey;
+        }
+      }
+    }
+  }
+
   &--footer {
     li {
       margin-bottom: 6px !important;
@@ -29,5 +53,21 @@
         color: $light-grey;
       }
     }
+  }
+}
+
+.mobile-menu {
+  overflow: hidden;
+  position: absolute;
+  right: 100%;
+  left: -100%;
+  top: 0;
+  height: 100vh;
+  z-index: 99;
+  transition: all 0.3s ease-in-out;
+
+  &.show {
+    right: 0;
+    left: 0;
   }
 }

@@ -8,7 +8,7 @@
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 99;
+    z-index: 90;
 
     figure {
       cursor: pointer;
@@ -31,6 +31,9 @@
 
   &__item {
     height: 100%;
+    opacity: 0;
+    animation: fade 1s forwards;
+
     &__container {
       height: 100%;
     }
@@ -58,6 +61,8 @@
       h1 {
         font-size: 30px;
         font-weight: bold;
+        opacity: 0;
+        animation: fade 1s 2s forwards;
 
         @include breakpoint(small) {
           font-size: 32px;
@@ -75,6 +80,8 @@
       h2 {
         font-weight: bold;
         font-size: 28px;
+        opacity: 0;
+        animation: fade 1s 1s forwards;
 
         @include breakpoint(small) {
           font-size: 30px;
@@ -87,6 +94,11 @@
         @include breakpoint(large) {
           font-size: 40px;
         }
+      }
+
+      .btn {
+        opacity: 0;
+        animation: fade 1s 3s forwards;
       }
     }
 
