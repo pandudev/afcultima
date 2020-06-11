@@ -28,17 +28,101 @@
     </header>
 
     <section class="hero">
-      <h3>Slider</h3>
+      <div id="heroSlider" class="slider">
+        <section class="slider__control d-flex justify-content-between">
+          <figure
+            id="slider1_prev"
+            class="d-flex align-items-center justify-content-center"
+          >
+            <img src="./assets/img/back.png" alt="Previous" />
+          </figure>
+          <figure
+            id="slider1_next"
+            class="d-flex align-items-center justify-content-center"
+          >
+            <img src="./assets/img/next.png" alt="Next" />
+          </figure>
+        </section>
+        <section id="slider1" class="fade slider__item container">
+          <img
+            class="slider__item__background"
+            src="./assets/img/slider1-bg.jpg"
+            alt="Slider 1"
+          />
+          <div class="row slider__item__container align-items-center">
+            <section
+              class="slider__item__content py-3 py-md-0 col-12 col-sm-5 col-md-8 col-lg-7"
+            >
+              <h2 class="fade">SOP100+ (SLIDE 1)</h2>
+              <h1 class="mb-3 mb-md-5">
+                MEMBANTU MENYEMBUHKAN SEGALA MACAM PENYAKIT
+              </h1>
+              <a href="#" class="btn btn--large">BELI SEKARANG</a>
+            </section>
+            <section
+              class="slider__item__image col-12 col-sm-7 col-md-4 col-lg-5 align-self-end d-flex justify-content-center"
+            >
+              <img src="./assets/img/model-1.png" alt="model 1" />
+            </section>
+          </div>
+        </section>
+        <section id="slider2" class="fade slider__item container">
+          <img
+            class="slider__item__background"
+            src="./assets/img/slider1-bg.jpg"
+            alt="Slider 1"
+          />
+          <div class="row slider__item__container align-items-center">
+            <section
+              class="slider__item__content py-3 py-md-0 col-12 col-sm-5 col-md-8 col-lg-7"
+            >
+              <h2>SOP100+ (SLIDE 2)</h2>
+              <h1 class="mb-3 mb-md-5">
+                MEMBANTU MENYEMBUHKAN SEGALA MACAM PENYAKIT
+              </h1>
+              <a href="#" class="btn btn--large">BELI SEKARANG</a>
+            </section>
+            <section
+              class="slider__item__image col-12 col-sm-7 col-md-4 col-lg-5 align-self-end d-flex justify-content-center"
+            >
+              <img src="./assets/img/model-1.png" alt="model 1" />
+            </section>
+          </div>
+        </section>
+        <section id="slider3" class="fade slider__item container">
+          <img
+            class="slider__item__background"
+            src="./assets/img/slider1-bg.jpg"
+            alt="Slider 1"
+          />
+          <div class="row slider__item__container align-items-center">
+            <section
+              class="slider__item__content py-3 py-md-0 col-12 col-sm-5 col-md-8 col-lg-7"
+            >
+              <h2>SOP100+ (SLIDE 3)</h2>
+              <h1 class="mb-3 mb-md-5">
+                MEMBANTU MENYEMBUHKAN SEGALA MACAM PENYAKIT
+              </h1>
+              <a href="#" class="btn btn--large">BELI SEKARANG</a>
+            </section>
+            <section
+              class="slider__item__image col-12 col-sm-7 col-md-4 col-lg-5 align-self-end d-flex justify-content-center"
+            >
+              <img src="./assets/img/model-1.png" alt="model 1" />
+            </section>
+          </div>
+        </section>
+      </div>
     </section>
 
     <main>
       <section class="afcultima py-5">
         <div class="container">
           <div class="row">
-            <figure class="afcultima__thumbnail p-3 col-md-6 mb-3 mb-md-0">
+            <figure class="afcultima__thumbnail p-3 col-lg-6 mb-3 mb-lg-0">
               <img src="./assets/img/AFC-team.jpeg" alt="AFC Team" />
             </figure>
-            <section class="afcultima__content col-md-6">
+            <section class="afcultima__content col-lg-6">
               <p>
                 AFC Japan didirikan oleh Asayama Tadahiko setelah mengumpulkan
                 pengalaman penjualan dan perdagangan selama bertahun-tahun.
@@ -67,11 +151,16 @@
       </section>
 
       <section class="products py-5">
-        <header class="products__header mx-auto mb-5">
+        <header
+          class="products__header container d-flex flex-column align-items-center mb-5"
+        >
           <h3>
-            PRODUK KESEHATAN TERBAIK HASIL RISET PENELITI JEPANG SELAMA
-            BERTAHUN-TAHUN
+            PRODUK TERBAIK KAMI
           </h3>
+          <h4>
+            Produk Kesehatan Terbaik Hasil Riset Peneliti Jepang Selama
+            Bertahun-tahun
+          </h4>
         </header>
         <section class="products__content container">
           <div class="row">
@@ -112,7 +201,7 @@
         <div class="container">
           <div class="row">
             <section
-              class="doctor__testimonial col-md-8 d-flex flex-column align-items-center"
+              class="doctor__testimonial col-lg-8 d-flex flex-column align-items-center"
             >
               <header class="doctor__testimonial__header">
                 <h3>TESTIMONIAL</h3>
@@ -129,7 +218,9 @@
                 <h4>Dokter Aesthetic Kecantikan/Member AFC Life Science</h4>
               </section>
             </section>
-            <section class="doctor__thumbnail col-md-4 container">
+            <section
+              class="doctor__thumbnail d-none d-lg-block col-md-4 container"
+            >
               <div class="row">
                 <div
                   class="col-md-6 mb-md-3 d-flex justify-content-between align-items-center"
@@ -187,18 +278,56 @@
         </header>
         <section class="news__content container">
           <div class="row">
-            <section class="col-md-3 news__content__item">
-              <div class="m-auto"></div>
-            </section>
-            <section class="col-md-3 news__content__item">
-              <div class="m-auto"></div>
-            </section>
-            <section class="col-md-3 news__content__item">
-              <div class="m-auto"></div>
-            </section>
-            <section class="col-md-3 news__content__item">
-              <div class="m-auto"></div>
-            </section>
+            <a href="#" class="mb-0 mb-sm-3 col-sm-6 col-lg-3">
+              <section class="news__content__item">
+                <figure>
+                  <img src="./assets/img/news1.jpg" alt="news 1" />
+                </figure>
+                <header
+                  class="p-1 d-flex align-items-center justify-content-center"
+                >
+                  <h4>
+                    Judul Berita 1
+                  </h4>
+                </header>
+              </section>
+            </a>
+            <a href="#" class="mb-0 mb-sm-3 col-sm-6 col-lg-3">
+              <section class="news__content__item">
+                <figure>
+                  <img src="./assets/img/news2.jpg" alt="news 2" />
+                </figure>
+                <header
+                  class="p-1 d-flex align-items-center justify-content-center"
+                >
+                  <h4>Judul Berita 2</h4>
+                </header>
+              </section>
+            </a>
+            <a href="#" class="mb-0 mb-sm-3 col-sm-6 col-lg-3">
+              <section class="news__content__item">
+                <figure>
+                  <img src="./assets/img/news3.jpg" alt="news 3" />
+                </figure>
+                <header
+                  class="p-1 d-flex align-items-center justify-content-center"
+                >
+                  <h4>Judul Berita 3</h4>
+                </header>
+              </section>
+            </a>
+            <a href="#" class="mb-0 mb-sm-3 col-sm-6 col-lg-3">
+              <section class="news__content__item">
+                <figure>
+                  <img src="./assets/img/news4.jpg" alt="news 4" />
+                </figure>
+                <header
+                  class="p-1 d-flex align-items-center justify-content-center"
+                >
+                  <h4>Judul Berita 4</h4>
+                </header>
+              </section>
+            </a>
           </div>
         </section>
       </section>
@@ -232,8 +361,24 @@
               </ul>
             </nav>
           </section>
-          <section class="footer__social col-md-5 mb-md-0">
+          <section class="footer__social col-md-3 mb-md-0">
             <h4>Stay Connected</h4>
+            <section class="footer__social__icon d-flex">
+              <a href="#">
+                <figure
+                  class="mr-3 d-flex justify-content-center align-items-center"
+                >
+                  <img src="./assets/img/facebook.png" alt="Facebook" />
+                </figure>
+              </a>
+              <a href="#">
+                <figure
+                  class="d-flex justify-content-center align-items-center"
+                >
+                  <img src="./assets/img/instagram.png" alt="Instagram" />
+                </figure>
+              </a>
+            </section>
           </section>
         </div>
       </div>
