@@ -1,7 +1,16 @@
 .hero {
-  height: calc(100vh - 80px);
-  background-color: $light-grey;
-  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  // background-color: $light-grey;
+  // overflow: hidden;
+
+  @include breakpoint(medium) {
+    height: 400px;
+  }
+
+  @include breakpoint(large) {
+    height: calc(100vh - 80px);
+  }
 }
 
 .afcultima {
@@ -71,6 +80,7 @@
     background-image: url("./../img/scientist.jpg");
     background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
   }
 
   &::after {
@@ -79,7 +89,6 @@
   }
 
   &__header {
-    width: 50%;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -129,6 +138,7 @@
     background-image: url("./../img/doctor.jpg");
     background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
   }
 
   &::after {
@@ -166,6 +176,25 @@
   color: $green;
   background-image: url("./../img/recommend.png");
   background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #bcc9da;
+
+  @include breakpoint(small) {
+    background-position: -400px;
+  }
+
+  @include breakpoint(medium) {
+    background-position: -280px;
+  }
+
+  @include breakpoint(large) {
+    background-position: right;
+  }
+
+  @include breakpoint(extralarge) {
+    background-position: -200px;
+  }
   &__testimonial {
     h2,
     h3,
@@ -180,15 +209,48 @@
   color: $green;
   &__header {
     text-align: center;
-    width: 50%;
   }
 
   &__content {
     &__item {
-      div {
-        width: 200px;
-        height: 200px;
+      position: relative;
+      height: 200px;
+      figure {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
         background-color: $green;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        header {
+          min-height: 100%;
+        }
+      }
+
+      header {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($color: $dark-green, $alpha: 0.9);
+        min-height: 50px;
+        transition: all 0.3s ease-in-out;
+
+        h4 {
+          color: $light-grey;
+        }
       }
     }
   }

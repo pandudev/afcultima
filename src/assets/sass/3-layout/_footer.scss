@@ -1,0 +1,21 @@
+.footer {
+  &__social {
+    &__icon {
+      a:hover {
+        figure {
+          background-color: $yellow;
+        }
+      }
+      figure {
+        width: 40px;
+        height: 40px;
+        background-color: $green;
+        transition: all 0.3s ease-in-out;
+
+        img {
+          width: 25px;
+        }
+      }
+    }
+  }
+}

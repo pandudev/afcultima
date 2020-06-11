@@ -3,8 +3,24 @@
   background-color: $yellow;
   color: $white;
   font-size: 20px;
+  display: inline-block;
+  text-align: center;
 
   &:hover {
     background-color: $green;
+  }
+
+  &--large {
+    width: 100%;
+
+    @include breakpoint(small) {
+      width: initial;
+    }
+
+    @include breakpoint(large) {
+      padding: 30px 60px;
+      font-size: 28px;
+      font-weight: 600;
+    }
   }
 }

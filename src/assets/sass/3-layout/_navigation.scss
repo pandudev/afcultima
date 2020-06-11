@@ -1,6 +1,10 @@
 .nav {
   &--main {
-    width: 600px;
+    width: 500px;
+
+    @include breakpoint(medium) {
+      width: 550px;
+    }
     a {
       color: $grey;
 
