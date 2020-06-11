@@ -1,0 +1,10 @@
+.btn {
+  padding: 15px 30px;
+  background-color: $yellow;
+  color: $white;
+  font-size: 20px;
+
+  &:hover {
+    background-color: $green;
+  }
+}

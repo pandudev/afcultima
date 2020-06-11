@@ -1,0 +1,8 @@
+.header {
+  height: 80px;
+  background-color: $dark-green;
+
+  &__nav > .nav > ul > li > a {
+    font-weight: $font-header !important;
+  }
+}

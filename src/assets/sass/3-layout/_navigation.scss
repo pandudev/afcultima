@@ -1,0 +1,29 @@
+.nav {
+  &--main {
+    width: 600px;
+    a {
+      color: $grey;
+
+      &:hover {
+        color: $light-grey;
+      }
+
+      &.active {
+        color: $yellow;
+      }
+    }
+  }
+
+  &--footer {
+    li {
+      margin-bottom: 6px !important;
+    }
+    a {
+      color: $grey;
+
+      &:hover {
+        color: $light-grey;
+      }
+    }
+  }
+}
