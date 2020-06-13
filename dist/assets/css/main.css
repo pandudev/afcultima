@@ -2973,6 +2973,10 @@ a {
 strong {
   font-weight: 600; }
 
+.slick-list,
+.slick-track {
+  height: 100% !important; }
+
 h1,
 h2,
 h3,
@@ -3128,7 +3132,10 @@ h4 {
 
 .slider {
   height: 100%;
+  background-color: red;
   position: relative; }
+  .slider .hero__slider {
+    height: 100%; }
   .slider__control {
     position: absolute;
     left: 10px;
@@ -3149,10 +3156,8 @@ h4 {
       .slider__control figure img {
         width: 30px; }
   .slider__item {
-    height: 100%;
-    opacity: 0;
-    -webkit-animation: fade 1s forwards;
-            animation: fade 1s forwards; }
+    position: relative;
+    height: 100%; }
     .slider__item__container {
       height: 100%; }
     .slider__item__background {
@@ -3173,34 +3178,27 @@ h4 {
         .slider__item__content {
           text-align: left; } }
       .slider__item__content h1 {
-        opacity: 0;
-        -webkit-animation: fade 1s 2s forwards;
-                animation: fade 1s 2s forwards; }
+        opacity: 0; }
+        .slider__item__content h1.fade {
+          -webkit-animation: fade 1s 2s forwards;
+                  animation: fade 1s 2s forwards; }
       .slider__item__content h2 {
         font-family: "Satisfy", cursive;
         font-weight: 600;
-        opacity: 0;
-        -webkit-animation: fade 1s 1s forwards;
-                animation: fade 1s 1s forwards; }
+        opacity: 0; }
+        .slider__item__content h2.fade {
+          -webkit-animation: fade 1s 1s forwards;
+                  animation: fade 1s 1s forwards; }
       .slider__item__content .btn {
-        opacity: 0;
-        -webkit-animation: fade 1s 3s forwards;
-                animation: fade 1s 3s forwards; }
+        opacity: 0; }
+        .slider__item__content .btn.fade {
+          -webkit-animation: fade 1s 3s forwards;
+                  animation: fade 1s 3s forwards; }
     .slider__item__image {
       position: relative; }
       .slider__item__image img {
         width: 100%;
         max-width: 400px; }
-        @media (min-width: 576px) {
-          .slider__item__image img {
-            max-width: unset;
-            height: auto; } }
-        @media (min-width: 768px) {
-          .slider__item__image img {
-            width: 130%; } }
-        @media (min-width: 992px) {
-          .slider__item__image img {
-            width: 120%; } }
 
 .btn {
   padding: 15px 30px;

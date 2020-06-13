@@ -6,6 +6,11 @@
     <title>AFC Life Science | Rahasia Panjang Umur dari Jepang</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/img/favicon.png" sizes="32x32" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
   <body>
     <header class="header d-flex align-items-center">
@@ -53,63 +58,63 @@
       <div id="heroSlider" class="slider">
         <section class="slider__control d-flex justify-content-between">
           <figure
-            id="slider1_prev"
-            class="d-flex align-items-center justify-content-center"
+            class="slider_prev d-flex align-items-center justify-content-center"
           >
             <img src="./assets/img/back.png" alt="Previous" />
           </figure>
           <figure
-            id="slider1_next"
-            class="d-flex align-items-center justify-content-center"
+            class="slider_next d-flex align-items-center justify-content-center"
           >
             <img src="./assets/img/next.png" alt="Next" />
           </figure>
         </section>
-        <section class="fade slider__item container">
-          <img
-            class="slider__item__background"
-            src="./assets/img/slider1-bg.jpg"
-            alt="Slider 1"
-          />
-          <div class="row slider__item__container align-items-center">
-            <section
-              class="slider__item__content py-3 py-md-0 col-12 col-sm-5 col-md-8 col-lg-7"
-            >
-              <h2 class="fade mb-3">SOP100+</h2>
-              <h1 class="mb-3 mb-md-5">
-                Membantu Menyembuhkan Segala Macam Penyakit
-              </h1>
-              <a href="#" class="btn btn--large">BELI SEKARANG</a>
-            </section>
-            <section
-              class="slider__item__image col-12 col-sm-7 col-md-4 col-lg-5 align-self-end d-flex justify-content-center"
-            >
-              <img src="./assets/img/model-1.png" alt="model 1" />
-            </section>
-          </div>
-        </section>
-        <section class="fade slider__item container">
-          <img
-            class="slider__item__background"
-            src="./assets/img/slider1-bg.jpg"
-            alt="Slider 1"
-          />
-          <div class="row slider__item__container align-items-center">
-            <section
-              class="slider__item__content py-3 py-md-0 col-12 col-sm-5 col-md-8 col-lg-7"
-            >
-              <h2 class="fade mb-3">SOP100+</h2>
-              <h1 class="mb-3 mb-md-5">
-                Membantu Menyembuhkan Segala Macam Penyakit
-              </h1>
-              <a href="#" class="btn btn--large">BELI SEKARANG</a>
-            </section>
-            <section
-              class="slider__item__image col-12 col-sm-7 col-md-4 col-lg-5 align-self-end d-flex justify-content-center"
-            >
-              <img src="./assets/img/model-1.png" alt="model 1" />
-            </section>
-          </div>
+        <section class="hero__slider">
+          <section class="slider__item">
+            <img
+              class="slider__item__background"
+              src="./assets/img/slider1-bg.jpg"
+              alt="Slider 1"
+            />
+            <div class="row slider__item__container align-items-center">
+              <section
+                class="slider__item__content px-5 py-3 py-md-0 col-12 col-sm-5 col-md-8 col-lg-7"
+              >
+                <h2 class="mb-3">SOP100+</h2>
+                <h1 class="mb-3 mb-md-5">
+                  Membantu Menyembuhkan Segala Macam Penyakit
+                </h1>
+                <a href="#" class="btn btn--large">BELI SEKARANG</a>
+              </section>
+              <section
+                class="slider__item__image col-12 col-sm-7 col-md-4 col-lg-5 align-self-end d-flex justify-content-center"
+              >
+                <img src="./assets/img/model-1.png" alt="model 1" />
+              </section>
+            </div>
+          </section>
+          <section class="slider__item">
+            <img
+              class="slider__item__background"
+              src="./assets/img/slider1-bg.jpg"
+              alt="Slider 1"
+            />
+            <div class="row slider__item__container align-items-center">
+              <section
+                class="slider__item__content px-5 py-3 py-md-0 col-12 col-sm-5 col-md-8 col-lg-7"
+              >
+                <h2 class="fade mb-3">SOP100+</h2>
+                <h1 class="mb-3 mb-md-5">
+                  Membantu Menyembuhkan Segala Macam Penyakit
+                </h1>
+                <a href="#" class="btn btn--large">BELI SEKARANG</a>
+              </section>
+              <section
+                class="slider__item__image col-12 col-sm-7 col-md-4 col-lg-5 align-self-end d-flex justify-content-center"
+              >
+                <img src="./assets/img/model-1.png" alt="model 1" />
+              </section>
+            </div>
+          </section>
         </section>
       </div>
     </section>
@@ -232,22 +237,46 @@
       <section class="doctor py-5">
         <div class="container">
           <div class="row">
-            <section
-              class="doctor__testimonial col-lg-8 d-flex flex-column align-items-center"
-            >
+            <section class="doctor__testimonial col-lg-8">
               <header class="doctor__testimonial__header">
                 <h3>TESTIMONIAL</h3>
                 <h2 class="mb-5">PENDAPAT DOKTER</h2>
               </header>
-              <img src="./assets/img/quote.png" alt="quote" class="mb-5" />
-              <section class="doctor__testimonial__say">
-                <p class="mb-5">
-                  Saya menderita diabetes sudah 2 bulan. Gula darah bisa
-                  mencapai 500 dan disarankan amputasi kaki. Sekarang gula darah
-                  saya turun setelah konsumsi SOP100+ sekitar 3 minggu.
-                </p>
-                <h3>dr. Lina Molina</h3>
-                <h4>Dokter Aesthetic Kecantikan/Member AFC Life Science</h4>
+
+              <section class="doctor__testimonial__slider">
+                <section
+                  class="doctor__testimonial__say d-flex flex-column align-items-center"
+                >
+                  <img
+                    src="./assets/img/quote.png"
+                    alt="quote"
+                    class="mb-5 mx-auto"
+                  />
+                  <p class="mb-5">
+                    Saya menderita diabetes sudah 2 bulan. Gula darah bisa
+                    mencapai 500 dan disarankan amputasi kaki. Sekarang gula
+                    darah saya turun setelah konsumsi SOP100+ sekitar 3 minggu.
+                  </p>
+                  <h3>dr. Lina Molina</h3>
+                  <h4>Dokter Aesthetic Kecantikan/Member AFC Life Science</h4>
+                </section>
+                <section
+                  class="doctor__testimonial__say d-flex flex-column align-items-center"
+                >
+                  <img
+                    src="./assets/img/quote.png"
+                    alt="quote"
+                    class="mb-5 mx-auto"
+                  />
+                  <p class="mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    porro repudiandae omnis illum in illo quia. Deleniti
+                    explicabo aperiam, eos natus consectetur non, nemo, esse hic
+                    unde aut at a?
+                  </p>
+                  <h3>dr. Lina Molina</h3>
+                  <h4>Dokter Aesthetic Kecantikan/Member AFC Life Science</h4>
+                </section>
               </section>
             </section>
             <section
@@ -283,22 +312,35 @@
       <section class="client py-5">
         <div class="container">
           <div class="row">
-            <section
-              class="client__testimonial col-md-8 offset-md-4 d-flex flex-column align-items-center"
-            >
+            <section class="client__testimonial col-md-8 offset-md-4">
               <header class="client__testimonial__header">
                 <h3>TESTIMONIAL</h3>
                 <h2 class="mb-5">OUR COSTUMER SAY</h2>
               </header>
-              <img src="./assets/img/quote.png" alt="quote" class="mb-5" />
-              <section class="client__testimonial__say">
-                <p class="mb-5">
-                  Saya menderita diabetes sudah 2 bulan. Gula darah bisa
-                  mencapai 500 dan disarankan amputasi kaki. Sekarang gula darah
-                  saya turun setelah konsumsi SOP100+ sekitar 3 minggu.
-                </p>
-                <h3>Anita Ardian</h3>
-              </section>
+              <div class="client__testimonial__slider">
+                <section
+                  class="client__testimonial__say d-flex flex-column align-items-center"
+                >
+                  <img src="./assets/img/quote.png" alt="quote" class="mb-5" />
+                  <p class="mb-5">
+                    Saya menderita diabetes sudah 2 bulan. Gula darah bisa
+                    mencapai 500 dan disarankan amputasi kaki. Sekarang gula
+                    darah saya turun setelah konsumsi SOP100+ sekitar 3 minggu.
+                  </p>
+                  <h3>Anita Ardian</h3>
+                </section>
+                <section
+                  class="client__testimonial__say d-flex flex-column align-items-center"
+                >
+                  <img src="./assets/img/quote.png" alt="quote" class="mb-5" />
+                  <p class="mb-5">
+                    Saya menderita diabetes sudah 2 bulan. Gula darah bisa
+                    mencapai 500 dan disarankan amputasi kaki. Sekarang gula
+                    darah saya turun setelah konsumsi SOP100+ sekitar 3 minggu.
+                  </p>
+                  <h3>Anita Ardian</h3>
+                </section>
+              </div>
             </section>
           </div>
         </div>
@@ -373,7 +415,7 @@
               >
                 <h3>Join Now!+</h3>
                 <h2 class="mb-4">
-                  Ayo Gabung sebagai Agent AFC dab Raih Kesuksesanmu Sekarang
+                  Ayo Gabung sebagai Agent AFC dan Raih Kesuksesanmu Sekarang
                   Juga!
                 </h2>
                 <a href="#" class="btn btn--medium">JOIN NOW</a>
@@ -439,5 +481,9 @@
     </footer>
 
     <script src="./assets/js/script.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </body>
 </html>

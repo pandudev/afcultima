@@ -1,6 +1,11 @@
 .slider {
   height: 100%;
+  background-color: red;
   position: relative;
+
+  .hero__slider {
+    height: 100%;
+  }
 
   &__control {
     position: absolute;
@@ -30,9 +35,8 @@
   }
 
   &__item {
+    position: relative;
     height: 100%;
-    opacity: 0;
-    animation: fade 1s forwards;
 
     &__container {
       height: 100%;
@@ -59,21 +63,29 @@
       }
 
       h1 {
-        // font-weight: 600;
         opacity: 0;
-        animation: fade 1s 2s forwards;
+
+        &.fade {
+          animation: fade 1s 2s forwards;
+        }
       }
 
       h2 {
         font-family: $font-product;
         font-weight: 600;
         opacity: 0;
-        animation: fade 1s 1s forwards;
+
+        &.fade {
+          animation: fade 1s 1s forwards;
+        }
       }
 
       .btn {
         opacity: 0;
-        animation: fade 1s 3s forwards;
+
+        &.fade {
+          animation: fade 1s 3s forwards;
+        }
       }
     }
 
@@ -82,19 +94,6 @@
       img {
         width: 100%;
         max-width: 400px;
-
-        @include breakpoint(small) {
-          max-width: unset;
-          height: auto;
-        }
-
-        @include breakpoint(medium) {
-          width: 130%;
-        }
-
-        @include breakpoint(large) {
-          width: 120%;
-        }
       }
     }
   }
