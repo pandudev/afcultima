@@ -265,12 +265,10 @@
     position: relative;
     z-index: 1;
 
-    .row > div {
-      figure {
-        background-color: $blue;
-        width: 100%;
-        height: 120px;
-      }
+    figure {
+      height: 100%;
+      width: 100%;
+      background-color: $green;
     }
   }
 }
