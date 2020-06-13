@@ -1,8 +1,6 @@
 .hero {
   height: fit-content;
   overflow: hidden;
-  // background-color: $light-grey;
-  // overflow: hidden;
 
   @include breakpoint(medium) {
     height: 400px;
@@ -17,7 +15,7 @@
   background-color: $white;
 
   &__thumbnail {
-    background-color: $light-grey;
+    // background-color: $light-grey;
 
     img {
       object-fit: cover;
@@ -116,8 +114,108 @@
 
 .banner {
   background-color: $grey;
-  height: 400px;
   width: 100%;
+
+  h1,
+  h2,
+  h3 {
+    color: $white;
+    font-weight: 600;
+    text-align: center;
+
+    @include breakpoint(small) {
+      text-align: left;
+    }
+  }
+
+  h3 {
+    font-family: $font-product;
+  }
+
+  &--sop100 {
+    height: 550px;
+    background: url("./../img/banner1-bg.jpg");
+    background-size: cover;
+    position: relative;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      @include breakpoint(small) {
+        text-align: center;
+      }
+      @include breakpoint(medium) {
+        text-align: left;
+      }
+    }
+
+    .model {
+      position: absolute;
+      right: 50%;
+      transform: translateX(50%);
+      bottom: 0;
+
+      height: 300px;
+
+      @include breakpoint(medium) {
+        height: 400px;
+        right: 30px;
+        transform: translateX(0);
+      }
+
+      @include breakpoint(large) {
+        height: 450px;
+        right: 100px;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .product {
+      position: absolute;
+      right: 50%;
+      bottom: 0;
+      transform: translateX(100%);
+
+      height: 100px;
+
+      @include breakpoint(medium) {
+        transform: translateX(0);
+        height: 150px;
+        right: 20px;
+      }
+
+      @include breakpoint(large) {
+        right: 30px;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  &--utsukushhii {
+    height: 500px;
+    background: url("./../img/utsukushhii-banner.jpg");
+    background-position: bottom left;
+    background-size: cover;
+
+    @include breakpoint(large) {
+      height: 600px;
+    }
+  }
+
+  &--join {
+    background: url("./../img/join-bg.jpg") no-repeat center;
+    background-size: cover;
+    h2 {
+      font-weight: normal;
+    }
+  }
 }
 
 .doctor {

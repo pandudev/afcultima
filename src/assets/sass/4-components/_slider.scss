@@ -59,41 +59,16 @@
       }
 
       h1 {
-        font-size: 30px;
-        font-weight: bold;
+        // font-weight: 600;
         opacity: 0;
         animation: fade 1s 2s forwards;
-
-        @include breakpoint(small) {
-          font-size: 32px;
-        }
-
-        @include breakpoint(medium) {
-          font-size: 36px;
-        }
-
-        @include breakpoint(large) {
-          font-size: 48px;
-        }
       }
 
       h2 {
-        font-weight: bold;
-        font-size: 28px;
+        font-family: $font-product;
+        font-weight: 600;
         opacity: 0;
         animation: fade 1s 1s forwards;
-
-        @include breakpoint(small) {
-          font-size: 30px;
-        }
-
-        @include breakpoint(medium) {
-          font-size: 32px;
-        }
-
-        @include breakpoint(large) {
-          font-size: 40px;
-        }
       }
 
       .btn {
