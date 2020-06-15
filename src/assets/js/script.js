@@ -19,7 +19,19 @@ function showDoctor(n) {
   $(".doctors").children().eq(n).addClass("show");
 }
 
+$(".accordion__item__answer").hide();
+
 $(document).ready(function () {
+  $(".accordion__item").click(function () {
+    $(this).children(".accordion__item__answer").slideToggle();
+    $(this).children(".accordion__item__question").toggleClass("active");
+    $(this).siblings().children(".accordion__item__answer").slideUp();
+    $(this)
+      .siblings()
+      .children(".accordion__item__question")
+      .removeClass("active");
+  });
+
   showDoctor(0);
   heroTransition();
   $("#hamburger").click(function () {

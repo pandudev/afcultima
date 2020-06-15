@@ -1,8 +1,17 @@
-.join-banner {
+.page-banner {
   height: 500px;
-  background: url("./../img/join-banner.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
+
+  &--join {
+    background: url("./../img/join-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &--faq {
+    background: url("./../img/faq-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 
   &__wrapper {
     color: $green;
@@ -14,6 +23,12 @@
     p {
       font-family: $font-stack;
       font-weight: 600;
+    }
+
+    &__header {
+      h1 {
+        font-size: 82px;
+      }
     }
   }
 }
