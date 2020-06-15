@@ -19,6 +19,12 @@
     background-position: center;
   }
 
+  &--contact {
+    background: url("./../img/contact-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
   &__wrapper {
     color: $green;
     h3 {
@@ -34,6 +40,11 @@
     &__header {
       h1 {
         font-size: 82px;
+      }
+
+      h2 {
+        font-size: 56px;
+        font-weight: 600;
       }
     }
   }
@@ -70,4 +81,13 @@
       }
     }
   }
+}
+
+.business-testimonial {
+  color: $green;
+}
+
+.business-form {
+  background-color: $light-blue;
+  color: $green;
 }
