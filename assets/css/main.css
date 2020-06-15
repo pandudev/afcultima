@@ -3177,7 +3177,8 @@ h4 {
         .slider__item__content {
           text-align: left; } }
       .slider__item__content h1 {
-        opacity: 0; }
+        opacity: 0;
+        font-weight: 600; }
         .slider__item__content h1.fade {
           -webkit-animation: fade 1s 2s forwards;
                   animation: fade 1s 2s forwards; }
@@ -3218,6 +3219,41 @@ h4 {
     .btn--large {
       padding: 30px 60px;
       font-weight: 600; } }
+
+.accordion {
+  color: #2f5a66; }
+  .accordion__item {
+    background-color: #e7f4f8;
+    cursor: pointer; }
+    .accordion__item__question {
+      position: relative; }
+      .accordion__item__question h4 {
+        padding-right: 3rem; }
+      .accordion__item__question::after {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        content: "";
+        background: url("./../img/next-2.png") no-repeat;
+        background-size: 20px 20px;
+        background-position: center;
+        height: 40px;
+        width: 40px;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%); }
+      .accordion__item__question.active::after {
+        transform: translateY(-50%) rotate(90deg); }
+    .accordion__item__answer {
+      background-color: #ffffff;
+      position: relative;
+      border: 2px solid #e7f4f8;
+      cursor: initial; }
+      .accordion__item__answer a {
+        font-weight: 600; }
+        .accordion__item__answer a:hover {
+          color: #f3e992; }
 
 .hero {
   height: -webkit-fit-content;
@@ -3503,19 +3539,26 @@ h4 {
     .footer__copyright p {
       color: #eeeeee !important; }
 
-.join-banner {
-  height: 500px;
-  background: url("./../img/join-banner.jpg") no-repeat;
-  background-size: cover;
-  background-position: center; }
-  .join-banner__wrapper {
+.page-banner {
+  height: 500px; }
+  .page-banner--join {
+    background: url("./../img/join-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .page-banner--faq {
+    background: url("./../img/faq-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .page-banner__wrapper {
     color: #2f5a66; }
-    .join-banner__wrapper h3 {
+    .page-banner__wrapper h3 {
       font-family: "Satisfy", cursive; }
-    .join-banner__wrapper h1,
-    .join-banner__wrapper p {
+    .page-banner__wrapper h1,
+    .page-banner__wrapper p {
       font-family: "Montserrat", sans-serif;
       font-weight: 600; }
+    .page-banner__wrapper__header h1 {
+      font-size: 82px; }
 
 .reason {
   color: #2f5a66;
@@ -3534,3 +3577,6 @@ h4 {
       background-color: #90c9d9; }
       .member__content__item.active .btn:hover {
         background-color: #163037; }
+
+.faq {
+  color: #2f5a66; }
