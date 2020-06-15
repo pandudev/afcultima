@@ -3502,3 +3502,35 @@ h4 {
     background-color: #2f5a66; }
     .footer__copyright p {
       color: #eeeeee !important; }
+
+.join-banner {
+  height: 500px;
+  background: url("./../img/join-banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .join-banner__wrapper {
+    color: #2f5a66; }
+    .join-banner__wrapper h3 {
+      font-family: "Satisfy", cursive; }
+    .join-banner__wrapper h1,
+    .join-banner__wrapper p {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600; }
+
+.reason {
+  color: #2f5a66;
+  text-align: center; }
+
+.member {
+  background-color: #e7f4f8;
+  color: #2f5a66; }
+  .member__content__item {
+    background-color: #ffffff; }
+    .member__content__item img {
+      width: 100%; }
+    .member__content__item__caption {
+      text-align: center; }
+    .member__content__item.active {
+      background-color: #90c9d9; }
+      .member__content__item.active .btn:hover {
+        background-color: #163037; }
