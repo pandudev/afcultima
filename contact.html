@@ -26,11 +26,9 @@
               <li>
                 <a href="./join.html">Join Our Business</a>
               </li>
-              <li>
-                <a href="./news-events.html" class="active">News & Events</a>
-              </li>
+              <li><a href="./news-events.html">News & Events</a></li>
               <li><a href="./faq.html">FAQ</a></li>
-              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="./contact.html" class="active">Contact Us</a></li>
             </ul>
           </nav>
         </div>
@@ -54,25 +52,57 @@
           <li>
             <a href="./join.html">Join Our Business</a>
           </li>
-          <li><a href="./news-events.html" class="active">News & Events</a></li>
-          <li><a href="./faq.html">FAQ</a></li>
-          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./news-events.html">News & Events</a></li>
+          <li><a href="./faq.html" class="active">FAQ</a></li>
+          <li><a href="./contact.html" class="active">Contact Us</a></li>
         </ul>
       </nav>
     </section>
 
     <main>
-      <section class="page-banner page-banner--news d-flex align-items-center">
+      <section
+        class="page-banner page-banner--contact d-flex align-items-center"
+      >
         <div class="container page-banner__wrapper">
           <div class="row align-items-center">
-            <div class="col-md-5 page-banner__wrapper__header">
-              <h1>NEWS & EVENTS</h1>
+            <div class="col-md-8 page-banner__wrapper__header">
+              <h2 class="mb-3">CONTACT US</h2>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="news py-5"></section>
+      <section class="contact py-5">
+        
+          <header class="contact__header d-flex flex-column align-items-center justify-content-center mb-5">
+            <h2>HUBUNGI KAMI</h2>
+            <p>Isi form di bawah dengan lengkap, kami akan menghubungi anda</p>
+          </header>
+          <div class="container">
+            <div class="row">
+              <div class="form form--border col-md-8 offset-md-2">
+
+                <div class="row">
+                  <div class="form__group col-md-6">
+                    <input type="text" placeholder="Nama" />
+                  </div>
+                  <div class="form__group col-md-6">
+                    <input type="email" placeholder="Email" />
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <textarea cols="30" rows="10" placeholder="Pesan Anda"></textarea>
+                </div>
+                <div class="form__group d-flex justify-content-end">
+                  <a href="#" class="btn">KIRIM PESAN</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </section>
     </main>
 
     <footer class="footer">

@@ -3130,6 +3130,44 @@ h4 {
   .footer__social__icon figure img {
     width: 25px; }
 
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .form--border input,
+  .form--border textarea,
+  .form--border select {
+    border: 1px solid #2f5a66 !important; }
+  .form__group input,
+  .form__group textarea,
+  .form__group select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+    border: none;
+    border: 1px solid #ffffff; }
+    .form__group input:focus, .form__group input:active,
+    .form__group textarea:focus,
+    .form__group textarea:active,
+    .form__group select:focus,
+    .form__group select:active {
+      border: 1px solid #2f5a66; }
+    .form__group input::-webkit-input-placeholder, .form__group textarea::-webkit-input-placeholder, .form__group select::-webkit-input-placeholder {
+      font-size: 1rem; }
+    .form__group input::-moz-placeholder, .form__group textarea::-moz-placeholder, .form__group select::-moz-placeholder {
+      font-size: 1rem; }
+    .form__group input:-ms-input-placeholder, .form__group textarea:-ms-input-placeholder, .form__group select:-ms-input-placeholder {
+      font-size: 1rem; }
+    .form__group input::-ms-input-placeholder, .form__group textarea::-ms-input-placeholder, .form__group select::-ms-input-placeholder {
+      font-size: 1rem; }
+    .form__group input::placeholder,
+    .form__group textarea::placeholder,
+    .form__group select::placeholder {
+      font-size: 1rem; }
+
 .slider {
   height: 100%;
   position: relative; }
@@ -3553,6 +3591,10 @@ h4 {
     background: url("./../img/news-banner.jpg") no-repeat;
     background-size: cover;
     background-position: center; }
+  .page-banner--contact {
+    background: url("./../img/contact-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center; }
   .page-banner__wrapper {
     color: #2f5a66; }
     .page-banner__wrapper h3 {
@@ -3563,6 +3605,9 @@ h4 {
       font-weight: 600; }
     .page-banner__wrapper__header h1 {
       font-size: 82px; }
+    .page-banner__wrapper__header h2 {
+      font-size: 56px;
+      font-weight: 600; }
 
 .reason {
   color: #2f5a66;
@@ -3582,5 +3627,15 @@ h4 {
       .member__content__item.active .btn:hover {
         background-color: #163037; }
 
+.business-testimonial {
+  color: #2f5a66; }
+
+.business-form {
+  background-color: #e7f4f8;
+  color: #2f5a66; }
+
 .faq {
+  color: #2f5a66; }
+
+.contact {
   color: #2f5a66; }
