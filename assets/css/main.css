@@ -3133,11 +3133,9 @@ h4 {
 .form {
   width: 100%;
   display: flex;
-  flex-direction: column; }
-  .form--border input,
-  .form--border textarea,
-  .form--border select {
-    border: 1px solid #2f5a66 !important; }
+  flex-direction: column;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  background-color: #ffffff; }
   .form__group input,
   .form__group textarea,
   .form__group select {
@@ -3148,13 +3146,18 @@ h4 {
     font-family: "Montserrat", sans-serif;
     outline: none;
     border: none;
-    border: 1px solid #ffffff; }
+    background-color: #e7f4f8;
+    border: 1px solid #e7f4f8; }
     .form__group input:focus, .form__group input:active,
     .form__group textarea:focus,
     .form__group textarea:active,
     .form__group select:focus,
     .form__group select:active {
       border: 1px solid #2f5a66; }
+    .form__group input select > option,
+    .form__group textarea select > option,
+    .form__group select select > option {
+      border: none !important; }
     .form__group input::-webkit-input-placeholder, .form__group textarea::-webkit-input-placeholder, .form__group select::-webkit-input-placeholder {
       font-size: 1rem; }
     .form__group input::-moz-placeholder, .form__group textarea::-moz-placeholder, .form__group select::-moz-placeholder {
