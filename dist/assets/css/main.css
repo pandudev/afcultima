@@ -3322,6 +3322,53 @@ h4 {
         .accordion__item__answer a:hover {
           color: #f3e992; }
 
+.product-banner {
+  height: 350px; }
+  @media (min-width: 576px) {
+    .product-banner {
+      height: 500px; } }
+  @media (min-width: 768px) {
+    .product-banner {
+      height: 600px; } }
+  @media (min-width: 992px) {
+    .product-banner {
+      height: 450px; } }
+  .product-banner--sop100 {
+    background: url("./../img/sop-banner-mobile.jpg");
+    background-size: cover;
+    background-position: left top; }
+    @media (min-width: 992px) {
+      .product-banner--sop100 {
+        background: url("./../img/sop-banner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat; } }
+  .product-banner--utsukushhii {
+    background: url("./../img/utsukushhii-bg.jpg");
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    color: #ffffff; }
+    @media (min-width: 576px) {
+      .product-banner--utsukushhii {
+        height: 300px; } }
+    @media (min-width: 768px) {
+      .product-banner--utsukushhii {
+        height: 400px; } }
+    @media (min-width: 992px) {
+      .product-banner--utsukushhii {
+        height: 450px; } }
+    .product-banner--utsukushhii h1,
+    .product-banner--utsukushhii h2 {
+      text-align: center; }
+      @media (min-width: 576px) {
+        .product-banner--utsukushhii h1,
+        .product-banner--utsukushhii h2 {
+          text-align: left; } }
+    .product-banner--utsukushhii h1 {
+      font-family: "Satisfy", cursive; }
+    .product-banner--utsukushhii h2 {
+      font-weight: bold; }
+
 .hero {
   height: -webkit-fit-content;
   height: -moz-fit-content;

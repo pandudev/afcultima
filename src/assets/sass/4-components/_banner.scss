@@ -1,0 +1,64 @@
+.product-banner {
+  height: 350px;
+  @include breakpoint(small) {
+    height: 500px;
+  }
+
+  @include breakpoint(medium) {
+    height: 600px;
+  }
+
+  @include breakpoint(large) {
+    height: 450px;
+  }
+
+  &--sop100 {
+    background: url("./../img/sop-banner-mobile.jpg");
+    background-size: cover;
+    background-position: left top;
+
+    @include breakpoint(large) {
+      background: url("./../img/sop-banner.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--utsukushhii {
+    background: url("./../img/utsukushhii-bg.jpg");
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+
+    @include breakpoint(small) {
+      height: 300px;
+    }
+
+    @include breakpoint(medium) {
+      height: 400px;
+    }
+
+    @include breakpoint(large) {
+      height: 450px;
+    }
+
+    color: $white;
+
+    h1,
+    h2 {
+      text-align: center;
+
+      @include breakpoint(small) {
+        text-align: left;
+      }
+    }
+
+    h1 {
+      font-family: $font-product;
+    }
+
+    h2 {
+      font-weight: bold;
+    }
+  }
+}
