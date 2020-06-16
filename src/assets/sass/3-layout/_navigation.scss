@@ -5,15 +5,55 @@
     @include breakpoint(medium) {
       width: 550px;
     }
-    a {
-      color: $grey;
 
-      &:hover {
-        color: $light-grey;
+    @include breakpoint(large) {
+      width: 600px;
+    }
+
+    & > ul > li {
+      position: relative;
+
+      &:hover > ul {
+        display: block;
       }
 
-      &.active {
-        color: $yellow;
+      a {
+        padding: 10px;
+        color: $light-grey;
+        height: 100%;
+
+        &:hover {
+          color: $white;
+        }
+
+        &.active {
+          color: $yellow;
+        }
+      }
+
+      ul {
+        display: none;
+        background-color: $green;
+        position: absolute;
+        z-index: +1;
+        top: 25px;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+
+        li {
+          display: flex;
+
+          &:hover {
+            background-color: $dark-green;
+          }
+
+          a {
+            padding: 10px;
+            width: 100%;
+            color: $white;
+            height: 100%;
+          }
+        }
       }
     }
   }

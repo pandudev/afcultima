@@ -3074,12 +3074,38 @@ h4 {
   @media (min-width: 768px) {
     .nav--main {
       width: 550px; } }
-  .nav--main a {
-    color: #687b81; }
-    .nav--main a:hover {
-      color: #eeeeee; }
-    .nav--main a.active {
-      color: #f3e992; }
+  @media (min-width: 992px) {
+    .nav--main {
+      width: 600px; } }
+  .nav--main > ul > li {
+    position: relative; }
+    .nav--main > ul > li:hover > ul {
+      display: block; }
+    .nav--main > ul > li a {
+      padding: 10px;
+      color: #eeeeee;
+      height: 100%; }
+      .nav--main > ul > li a:hover {
+        color: #ffffff; }
+      .nav--main > ul > li a.active {
+        color: #f3e992; }
+    .nav--main > ul > li ul {
+      display: none;
+      background-color: #2f5a66;
+      position: absolute;
+      z-index: +1;
+      top: 25px;
+      left: 0;
+      transition: all 0.3s ease-in-out; }
+      .nav--main > ul > li ul li {
+        display: flex; }
+        .nav--main > ul > li ul li:hover {
+          background-color: #163037; }
+        .nav--main > ul > li ul li a {
+          padding: 10px;
+          width: 100%;
+          color: #ffffff;
+          height: 100%; }
 
 .nav--mobile {
   background-color: #2f5a66;
