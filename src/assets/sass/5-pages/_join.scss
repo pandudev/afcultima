@@ -1,55 +1,3 @@
-.page-banner {
-  height: 500px;
-
-  &--join {
-    background: url("./../img/join-banner.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  &--faq {
-    background: url("./../img/faq-banner.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  &--news {
-    background: url("./../img/news-banner.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  &--contact {
-    background: url("./../img/contact-banner.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  &__wrapper {
-    color: $green;
-    h3 {
-      font-family: $font-product;
-    }
-
-    h1,
-    p {
-      font-family: $font-stack;
-      font-weight: 600;
-    }
-
-    &__header {
-      h1 {
-        font-size: 82px;
-      }
-
-      h2 {
-        font-size: 56px;
-        font-weight: 600;
-      }
-    }
-  }
-}
-
 .reason {
   color: $green;
   text-align: center;
@@ -86,6 +34,14 @@
 
 .business-testimonial {
   color: $green;
+  text-align: center;
+
+  &__content {
+    &__item {
+      height: 100%;
+      background-color: $light-blue;
+    }
+  }
 }
 
 .business-form {

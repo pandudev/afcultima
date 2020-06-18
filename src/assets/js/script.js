@@ -33,7 +33,9 @@ $(document).ready(function () {
   });
 
   showDoctor(0);
+
   heroTransition();
+
   $("#hamburger").click(function () {
     $(this).toggleClass("active");
     $(".mobile-menu").toggleClass("show");
@@ -53,6 +55,10 @@ $(document).ready(function () {
     arrows: false,
   });
   $(".client__testimonial__slider").slick({
+    autoplay: true,
+    arrows: false,
+  });
+  $(".sop--testimonial__slider").slick({
     autoplay: true,
     arrows: false,
   });

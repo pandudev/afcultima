@@ -62,3 +62,55 @@
     }
   }
 }
+
+.page-banner {
+  height: 400px;
+
+  &--join {
+    background: url("./../img/join-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+
+  &--faq {
+    background: url("./../img/faq-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+
+  &--news {
+    background: url("./../img/news-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+
+  &--contact {
+    background: url("./../img/contact-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+
+  &__wrapper {
+    color: $green;
+    h3 {
+      font-family: $font-product;
+    }
+
+    h1,
+    p {
+      font-family: $font-stack;
+      font-weight: 600;
+    }
+
+    &__header {
+      h1 {
+        font-size: 64px;
+      }
+
+      h2 {
+        font-size: 56px;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -2992,6 +2992,14 @@ p {
   @media (min-width: 992px) {
     p {
       font-size: 18px; } }
+  p.small {
+    font-size: 12px; }
+    @media (min-width: 768px) {
+      p.small {
+        font-size: 14px; } }
+    @media (min-width: 992px) {
+      p.small {
+        font-size: 16px; } }
 
 h1 {
   font-size: 36px;
@@ -3110,19 +3118,23 @@ h4 {
 .nav--mobile {
   background-color: #2f5a66;
   height: 100vh; }
-  .nav--mobile ul {
+  .nav--mobile > ul {
     height: 80%;
     width: 100%; }
-    .nav--mobile ul li {
+    .nav--mobile > ul li {
       width: 100%;
       text-align: center;
-      display: flex; }
-      .nav--mobile ul li a {
+      display: flex;
+      flex-direction: column;
+      position: relative; }
+      .nav--mobile > ul li a {
         padding: 15px;
         flex: 1;
         font-size: 20px;
         font-weight: 600;
         color: #eeeeee; }
+        .nav--mobile > ul li a.active {
+          color: #f3e992; }
 
 .nav--footer li {
   margin-bottom: 6px !important; }
@@ -3274,6 +3286,12 @@ h4 {
   font-size: 20px;
   display: inline-block;
   text-align: center; }
+  .btn--white {
+    background-color: #ffffff;
+    color: #1f7aec !important; }
+    .btn--white:hover {
+      color: #1f7aec !important;
+      background-color: #ffffff !important; }
   .btn:hover {
     background-color: #2f5a66;
     color: #ffffff; }
@@ -3368,6 +3386,38 @@ h4 {
       font-family: "Satisfy", cursive; }
     .product-banner--utsukushhii h2 {
       font-weight: bold; }
+
+.page-banner {
+  height: 400px; }
+  .page-banner--join {
+    background: url("./../img/join-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: left; }
+  .page-banner--faq {
+    background: url("./../img/faq-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: left; }
+  .page-banner--news {
+    background: url("./../img/news-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: left; }
+  .page-banner--contact {
+    background: url("./../img/contact-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: left; }
+  .page-banner__wrapper {
+    color: #2f5a66; }
+    .page-banner__wrapper h3 {
+      font-family: "Satisfy", cursive; }
+    .page-banner__wrapper h1,
+    .page-banner__wrapper p {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600; }
+    .page-banner__wrapper__header h1 {
+      font-size: 64px; }
+    .page-banner__wrapper__header h2 {
+      font-size: 56px;
+      font-weight: 600; }
 
 .hero {
   height: -webkit-fit-content;
@@ -3653,38 +3703,6 @@ h4 {
     .footer__copyright p {
       color: #eeeeee !important; }
 
-.page-banner {
-  height: 500px; }
-  .page-banner--join {
-    background: url("./../img/join-banner.jpg") no-repeat;
-    background-size: cover;
-    background-position: center; }
-  .page-banner--faq {
-    background: url("./../img/faq-banner.jpg") no-repeat;
-    background-size: cover;
-    background-position: center; }
-  .page-banner--news {
-    background: url("./../img/news-banner.jpg") no-repeat;
-    background-size: cover;
-    background-position: center; }
-  .page-banner--contact {
-    background: url("./../img/contact-banner.jpg") no-repeat;
-    background-size: cover;
-    background-position: center; }
-  .page-banner__wrapper {
-    color: #2f5a66; }
-    .page-banner__wrapper h3 {
-      font-family: "Satisfy", cursive; }
-    .page-banner__wrapper h1,
-    .page-banner__wrapper p {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 600; }
-    .page-banner__wrapper__header h1 {
-      font-size: 82px; }
-    .page-banner__wrapper__header h2 {
-      font-size: 56px;
-      font-weight: 600; }
-
 .reason {
   color: #2f5a66;
   text-align: center; }
@@ -3704,7 +3722,11 @@ h4 {
         background-color: #163037; }
 
 .business-testimonial {
-  color: #2f5a66; }
+  color: #2f5a66;
+  text-align: center; }
+  .business-testimonial__content__item {
+    height: 100%;
+    background-color: #e7f4f8; }
 
 .business-form {
   background-color: #e7f4f8;
@@ -3714,4 +3736,165 @@ h4 {
   color: #2f5a66; }
 
 .contact {
+  color: #2f5a66;
+  text-align: center; }
+
+.sop {
   color: #2f5a66; }
+  .sop--intro__thumbnail img {
+    width: 100%; }
+  .sop--intro__content h4 {
+    color: #90c9d9; }
+  .sop--intro__content h3 {
+    color: #2f5a66; }
+  .sop--intro__content p:not(last-of-child) {
+    margin-bottom: 1rem; }
+  .sop--intro__benefit {
+    color: #2f5a66; }
+    .sop--intro__benefit h3 {
+      text-align: center; }
+    .sop--intro__benefit__point {
+      position: relative;
+      counter-reset: section; }
+      .sop--intro__benefit__point h4 {
+        padding-left: 5rem;
+        margin-bottom: 1rem; }
+        .sop--intro__benefit__point h4::before {
+          counter-increment: section;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          content: counter(section);
+          width: 30px;
+          height: 30px;
+          background-color: #f3e992;
+          left: 30px; }
+  .sop--cta {
+    background-color: #1f7aec; }
+    .sop--cta h2 {
+      color: #ffffff;
+      text-align: center; }
+  .sop--salmon-banner {
+    background: url("./../img/salmon.jpg") no-repeat right;
+    background-size: cover;
+    background-position: center center;
+    color: #2f5a66; }
+    .sop--salmon-banner p:not(:last-of-type) {
+      margin-bottom: 1rem; }
+  .sop--about {
+    color: #2f5a66; }
+    .sop--about__header {
+      text-align: center; }
+    .sop--about__content__thumbnail img {
+      width: 100%; }
+      @media (min-width: 768px) {
+        .sop--about__content__thumbnail img {
+          width: 400px; } }
+    .sop--about__content__points:first-of-type {
+      text-align: right; }
+    .sop--about__content__points img {
+      width: 120px; }
+      @media (min-width: 768px) {
+        .sop--about__content__points img {
+          width: 100%; } }
+  .sop--research {
+    color: #ffffff;
+    background: url("./../img/research-banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center; }
+    .sop--research h4 {
+      color: #2f5a66; }
+    .sop--research__points {
+      counter-reset: section; }
+      .sop--research__points h4 {
+        position: relative;
+        padding-left: 60px; }
+        .sop--research__points h4:before {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          counter-increment: section;
+          position: absolute;
+          content: counter(section);
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 40px;
+          height: 40px;
+          background-color: #f3e992; }
+  .sop--patent {
+    color: #2f5a66; }
+    .sop--patent__header {
+      text-align: center; }
+    .sop--patent__content__item {
+      background-color: #90c9d9;
+      width: 120px; }
+      .sop--patent__content__item img {
+        width: 100%; }
+      @media (min-width: 768px) {
+        .sop--patent__content__item {
+          width: 200px; } }
+    .sop--patent__content h3,
+    .sop--patent__content p {
+      text-align: center; }
+  .sop--benefit {
+    color: #ffffff;
+    background-color: #1f7aec; }
+    .sop--benefit__content__item {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      border: 2px solid #ffffff; }
+      .sop--benefit__content__item h4 {
+        color: #ffffff;
+        text-align: center;
+        margin-top: auto; }
+  .sop--anti-aging {
+    color: #2f5a66; }
+    .sop--anti-aging h2,
+    .sop--anti-aging h3 {
+      text-align: center; }
+      @media (min-width: 768px) {
+        .sop--anti-aging h2,
+        .sop--anti-aging h3 {
+          text-align: left; } }
+    .sop--anti-aging img {
+      width: 300px; }
+  .sop--why {
+    color: #2f5a66;
+    background: url("./../img/banner-sop.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center; }
+    .sop--why h2 {
+      text-align: center; }
+      @media (min-width: 768px) {
+        .sop--why h2 {
+          text-align: left; } }
+    .sop--why__content__list {
+      counter-reset: section; }
+      .sop--why__content__list p {
+        position: relative;
+        padding-left: 20px; }
+        .sop--why__content__list p::before {
+          position: absolute;
+          left: 0;
+          counter-increment: section;
+          content: counter(section) "."; }
+  .sop--testimonial {
+    color: #2f5a66;
+    text-align: center; }
+    .sop--testimonial__content__item {
+      height: 100%;
+      background-color: #e7f4f8; }
+  .sop--sop-banner {
+    background: url("./../img/sop-banner-2.jpg") no-repeat;
+    background-size: cover;
+    background-position: right;
+    color: #ffffff;
+    text-align: center;
+    height: 300px; }
+    @media (min-width: 768px) {
+      .sop--sop-banner {
+        height: 450px;
+        text-align: right; } }
