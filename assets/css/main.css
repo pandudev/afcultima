@@ -3739,27 +3739,36 @@ h4 {
   color: #2f5a66;
   text-align: center; }
 
-.sop {
+.product {
   color: #2f5a66; }
-  .sop--intro__thumbnail img {
+  .product--intro__thumbnail img {
     width: 100%; }
-  .sop--intro__content h4 {
+  .product--intro__content.utsukushhii h3 {
+    color: #801c5c; }
+  .product--intro__content h4 {
     color: #90c9d9; }
-  .sop--intro__content h3 {
+  .product--intro__content h3 {
     color: #2f5a66; }
-  .sop--intro__content p:not(last-of-child) {
+  .product--intro__content p:not(last-of-child) {
     margin-bottom: 1rem; }
-  .sop--intro__benefit {
+  .product--intro__benefit {
     color: #2f5a66; }
-    .sop--intro__benefit h3 {
+    .product--intro__benefit.utsukushhii {
+      color: #687b81; }
+      .product--intro__benefit.utsukushhii h3 {
+        color: #801c5c; }
+    .product--intro__benefit h3 {
       text-align: center; }
-    .sop--intro__benefit__point {
+    .product--intro__benefit__point {
       position: relative;
       counter-reset: section; }
-      .sop--intro__benefit__point h4 {
+      .product--intro__benefit__point.utsukushhii h4::before {
+        background-color: #801c5c;
+        color: #ffffff; }
+      .product--intro__benefit__point h4 {
         padding-left: 5rem;
         margin-bottom: 1rem; }
-        .sop--intro__benefit__point h4::before {
+        .product--intro__benefit__point h4::before {
           counter-increment: section;
           display: flex;
           justify-content: center;
@@ -3770,47 +3779,62 @@ h4 {
           height: 30px;
           background-color: #f3e992;
           left: 30px; }
-  .sop--cta {
+  .product--cta {
     background-color: #1f7aec; }
-    .sop--cta h2 {
+    .product--cta.utsukushhii {
+      background-color: #801c5c; }
+      .product--cta.utsukushhii .btn {
+        color: #801c5c !important; }
+    .product--cta h2 {
       color: #ffffff;
       text-align: center; }
-  .sop--salmon-banner {
+  .product--about-banner {
     background: url("./../img/salmon.jpg") no-repeat right;
     background-size: cover;
     background-position: center center;
     color: #2f5a66; }
-    .sop--salmon-banner p:not(:last-of-type) {
+    .product--about-banner.utsukushhii {
+      color: #ffffff;
+      background-size: cover !important;
+      background-position: center center !important;
+      background: url("./../img/utsukushhii-banner2.jpg") no-repeat right; }
+    .product--about-banner p:not(:last-of-type) {
       margin-bottom: 1rem; }
-  .sop--about {
+  .product--about {
     color: #2f5a66; }
-    .sop--about__header {
+    .product--about.utsukushhii {
+      color: #801c5c; }
+    .product--about__header {
       text-align: center; }
-    .sop--about__content__thumbnail img {
-      width: 100%; }
+    .product--about__content__thumbnail img {
+      width: 90%; }
       @media (min-width: 768px) {
-        .sop--about__content__thumbnail img {
-          width: 400px; } }
-    .sop--about__content__points:first-of-type {
+        .product--about__content__thumbnail img {
+          width: 350px; } }
+    .product--about__content__points:first-of-type {
       text-align: right; }
-    .sop--about__content__points img {
+    .product--about__content__points img {
       width: 120px; }
       @media (min-width: 768px) {
-        .sop--about__content__points img {
+        .product--about__content__points img {
           width: 100%; } }
-  .sop--research {
+  .product--about-2 {
     color: #ffffff;
     background: url("./../img/research-banner.jpg") no-repeat;
     background-size: cover;
     background-position: center center; }
-    .sop--research h4 {
+    .product--about-2.utsukushhii {
+      background-size: cover !important;
+      background-position: center center !important;
+      background: url("./../img/salmon-dna.jpg") no-repeat; }
+    .product--about-2 h4 {
       color: #2f5a66; }
-    .sop--research__points {
+    .product--about-2__points {
       counter-reset: section; }
-      .sop--research__points h4 {
+      .product--about-2__points h4 {
         position: relative;
         padding-left: 60px; }
-        .sop--research__points h4:before {
+        .product--about-2__points h4:before {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -3823,78 +3847,128 @@ h4 {
           width: 40px;
           height: 40px;
           background-color: #f3e992; }
-  .sop--patent {
-    color: #2f5a66; }
-    .sop--patent__header {
+  .product--patent {
+    color: #2f5a66;
+    text-align: center; }
+    .product--patent.utsukushhii {
+      color: #801c5c; }
+      .product--patent.utsukushhii p {
+        color: #687b81 !important; }
+      .product--patent.utsukushhii .product--patent__content__item {
+        border-radius: 0;
+        background-color: unset; }
+        .product--patent.utsukushhii .product--patent__content__item img {
+          width: 120px;
+          border-radius: 50%; }
+          @media (min-width: 768px) {
+            .product--patent.utsukushhii .product--patent__content__item img {
+              width: 200px; } }
+    .product--patent__header {
       text-align: center; }
-    .sop--patent__content__item {
-      background-color: #90c9d9;
-      width: 120px; }
-      .sop--patent__content__item img {
-        width: 100%; }
+    .product--patent__content__item {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #e7f4f8; }
+      .product--patent__content__item img {
+        width: 80px; }
       @media (min-width: 768px) {
-        .sop--patent__content__item {
-          width: 200px; } }
-    .sop--patent__content h3,
-    .sop--patent__content p {
+        .product--patent__content__item {
+          width: 200px;
+          height: 200px; }
+          .product--patent__content__item img {
+            width: 110px; } }
+    .product--patent__content h3,
+    .product--patent__content p {
       text-align: center; }
-  .sop--benefit {
-    color: #ffffff;
-    background-color: #1f7aec; }
-    .sop--benefit__content__item {
+  .product--benefit {
+    color: #90c9d9;
+    background-color: #e7f4f8; }
+    .product--benefit.utsukushhii {
+      color: #ffffff;
+      background-color: #801c5c; }
+    .product--benefit__content__item {
+      background-color: #ffffff;
       width: 100%;
       height: 150px;
       padding: 10px;
-      border: 2px solid #ffffff; }
-      .sop--benefit__content__item h4 {
-        color: #ffffff;
+      border: 2px solid #90c9d9; }
+      .product--benefit__content__item.utsukushhii {
+        overflow: hidden;
+        background-color: unset;
+        border: 0;
+        height: auto;
+        text-align: center; }
+        .product--benefit__content__item.utsukushhii img {
+          -o-object-fit: cover;
+             object-fit: cover;
+          width: 300px;
+          height: auto; }
+      .product--benefit__content__item h4 {
         text-align: center;
         margin-top: auto; }
-  .sop--anti-aging {
+  .product--anti-aging {
     color: #2f5a66; }
-    .sop--anti-aging h2,
-    .sop--anti-aging h3 {
+    .product--anti-aging h2,
+    .product--anti-aging h3 {
       text-align: center; }
       @media (min-width: 768px) {
-        .sop--anti-aging h2,
-        .sop--anti-aging h3 {
+        .product--anti-aging h2,
+        .product--anti-aging h3 {
           text-align: left; } }
-    .sop--anti-aging img {
-      width: 300px; }
-  .sop--why {
+    .product--anti-aging img {
+      width: 100%; }
+      @media (min-width: 768px) {
+        .product--anti-aging img {
+          width: 200px; } }
+      @media (min-width: 992px) {
+        .product--anti-aging img {
+          width: 250px; } }
+  .product--why {
     color: #2f5a66;
     background: url("./../img/banner-sop.jpg") no-repeat;
     background-size: cover;
     background-position: center center; }
-    .sop--why h2 {
+    .product--why h2 {
       text-align: center; }
       @media (min-width: 768px) {
-        .sop--why h2 {
+        .product--why h2 {
           text-align: left; } }
-    .sop--why__content__list {
+    .product--why__content__list {
       counter-reset: section; }
-      .sop--why__content__list p {
+      .product--why__content__list p {
         position: relative;
         padding-left: 20px; }
-        .sop--why__content__list p::before {
+        .product--why__content__list p::before {
           position: absolute;
           left: 0;
           counter-increment: section;
           content: counter(section) "."; }
-  .sop--testimonial {
+  .product--testimonial {
     color: #2f5a66;
     text-align: center; }
-    .sop--testimonial__content__item {
+    .product--testimonial.utsukushhii {
+      color: #801c5c; }
+    .product--testimonial__content__item {
       height: 100%;
       background-color: #e7f4f8; }
-  .sop--sop-banner {
+      .product--testimonial__content__item.utsukushhii {
+        background-color: #a7367d;
+        color: #ffffff; }
+  .product--banner {
     background: url("./../img/sop-banner-2.jpg") no-repeat;
     background-size: cover;
     background-position: right;
     color: #ffffff;
     text-align: center;
     height: 300px; }
+    .product--banner.utsukushhii {
+      background: url("./../img/utsukushhii-banner5.jpg") no-repeat;
+      background-size: cover;
+      background-position: right; }
+      .product--banner.utsukushhii .btn {
+        color: #801c5c !important; }
     @media (min-width: 768px) {
-      .sop--sop-banner {
+      .product--banner {
         height: 450px;
         text-align: right; } }
