@@ -1,4 +1,4 @@
-.sop {
+.product {
   color: $green;
 
   &--intro {
@@ -9,6 +9,12 @@
     }
 
     &__content {
+      &.utsukushhii {
+        h3 {
+          color: $purple;
+        }
+      }
+
       h4 {
         color: $blue;
       }
@@ -24,6 +30,13 @@
 
     &__benefit {
       color: $green;
+
+      &.utsukushhii {
+        color: $grey;
+        h3 {
+          color: $purple;
+        }
+      }
       h3 {
         text-align: center;
       }
@@ -31,6 +44,13 @@
       &__point {
         position: relative;
         counter-reset: section;
+
+        &.utsukushhii {
+          h4::before {
+            background-color: $purple;
+            color: $white;
+          }
+        }
         h4 {
           padding-left: 5rem;
           margin-bottom: 1rem;
@@ -55,17 +75,32 @@
   &--cta {
     background-color: $water-blue;
 
+    &.utsukushhii {
+      background-color: $purple;
+
+      .btn {
+        color: $purple !important;
+      }
+    }
+
     h2 {
       color: $white;
       text-align: center;
     }
   }
 
-  &--salmon-banner {
+  &--about-banner {
     background: url("./../img/salmon.jpg") no-repeat right;
     background-size: cover;
     background-position: center center;
     color: $green;
+
+    &.utsukushhii {
+      color: $white;
+      background-size: cover !important;
+      background-position: center center !important;
+      background: url("./../img/utsukushhii-banner2.jpg") no-repeat right;
+    }
 
     p:not(:last-of-type) {
       margin-bottom: 1rem;
@@ -73,6 +108,9 @@
   }
 
   &--about {
+    &.utsukushhii {
+      color: $purple;
+    }
     color: $green;
     &__header {
       text-align: center;
@@ -81,10 +119,10 @@
     &__content {
       &__thumbnail {
         img {
-          width: 100%;
+          width: 90%;
 
           @include breakpoint(medium) {
-            width: 400px;
+            width: 350px;
           }
         }
       }
@@ -105,12 +143,17 @@
     }
   }
 
-  &--research {
+  &--about-2 {
     color: $white;
     background: url("./../img/research-banner.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
 
+    &.utsukushhii {
+      background-size: cover !important;
+      background-position: center center !important;
+      background: url("./../img/salmon-dna.jpg") no-repeat;
+    }
     & h4 {
       color: $green;
     }
@@ -141,20 +184,48 @@
 
   &--patent {
     color: $green;
+    text-align: center;
+
+    &.utsukushhii {
+      color: $purple;
+      p {
+        color: $grey !important;
+      }
+      .product--patent__content__item {
+        border-radius: 0;
+        background-color: unset;
+        img {
+          width: 120px;
+          border-radius: 50%;
+
+          @include breakpoint(medium) {
+            width: 200px;
+          }
+        }
+      }
+    }
+
     &__header {
       text-align: center;
     }
     &__content {
       &__item {
-        background-color: $blue;
         width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: $light-blue;
 
         img {
-          width: 100%;
+          width: 80px;
         }
 
         @include breakpoint(medium) {
           width: 200px;
+          height: 200px;
+
+          img {
+            width: 110px;
+          }
         }
       }
 
@@ -166,17 +237,36 @@
   }
 
   &--benefit {
-    color: $white;
-    background-color: $water-blue;
+    color: $blue;
+    background-color: $light-blue;
+
+    &.utsukushhii {
+      color: $white;
+      background-color: $purple;
+    }
+
     &__content {
       &__item {
+        background-color: $white;
         width: 100%;
         height: 150px;
         padding: 10px;
-        border: 2px solid $white;
+        border: 2px solid $blue;
+
+        &.utsukushhii {
+          overflow: hidden;
+          background-color: unset;
+          border: 0;
+          height: auto;
+          text-align: center;
+          img {
+            object-fit: cover;
+            width: 300px;
+            height: auto;
+          }
+        }
 
         h4 {
-          color: $white;
           text-align: center;
           margin-top: auto;
         }
@@ -195,7 +285,15 @@
     }
     color: $green;
     img {
-      width: 300px;
+      width: 100%;
+
+      @include breakpoint(medium) {
+        width: 200px;
+      }
+
+      @include breakpoint(large) {
+        width: 250px;
+      }
     }
   }
 
@@ -232,21 +330,40 @@
     color: $green;
     text-align: center;
 
+    &.utsukushhii {
+      color: $purple;
+    }
+
     &__content {
       &__item {
         height: 100%;
         background-color: $light-blue;
+
+        &.utsukushhii {
+          background-color: $light-purple;
+          color: $white;
+        }
       }
     }
   }
 
-  &--sop-banner {
+  &--banner {
     background: url("./../img/sop-banner-2.jpg") no-repeat;
     background-size: cover;
     background-position: right;
     color: $white;
     text-align: center;
     height: 300px;
+
+    &.utsukushhii {
+      background: url("./../img/utsukushhii-banner5.jpg") no-repeat;
+      background-size: cover;
+      background-position: right;
+
+      .btn {
+        color: $purple !important;
+      }
+    }
     @include breakpoint(medium) {
       height: 450px;
       text-align: right;
