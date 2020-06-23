@@ -1,6 +1,8 @@
 // Script Here
 window.$ = window.jQuery = require("jquery");
 
+$("#goTop").hide();
+
 function heroTransition() {
   $(".slider__item h1").addClass("fade");
   $(".slider__item h2").addClass("fade");
@@ -22,6 +24,18 @@ function showDoctor(n) {
 $(".accordion__item__answer").hide();
 
 $(document).ready(function () {
+  $(window).scroll(function () {
+    var wScroll = $(this).scrollTop();
+    var showPoint = $(".show-gotop").offset().top;
+
+    // toggle show gotop button
+    if (wScroll >= showPoint) {
+      $("#goTop").show();
+    } else {
+      $("#goTop").hide();
+    }
+  });
+
   $(".accordion__item").click(function () {
     $(this).children(".accordion__item__answer").slideToggle();
     $(this).children(".accordion__item__question").toggleClass("active");

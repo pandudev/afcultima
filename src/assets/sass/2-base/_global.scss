@@ -20,3 +20,25 @@ strong {
 .slick-track {
   height: 100% !important;
 }
+
+.float-icon {
+  position: fixed;
+
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  img {
+    width: 100%;
+  }
+  &--whatsapp {
+    bottom: 80px;
+  }
+  &--gotop {
+    background-color: $yellow;
+    bottom: 20px;
+
+    img {
+      transform: rotate(-90deg);
+    }
+  }
+}

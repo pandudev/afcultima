@@ -56,6 +56,7 @@ gulp.task("serve", function () {
 
   gulp.watch(paths.styles.src, gulp.series("sass"));
   gulp.watch(paths.scripts.src, gulp.series("script"));
+  gulp.watch(paths.images.src, gulp.series("imgSquash"));
   gulp.watch(paths.styles.dest + "/*.css").on("change", browserSync.reload);
   gulp.watch(paths.scripts.dest + "/*.js").on("change", browserSync.reload);
   gulp.watch("./dist/*.html").on("change", browserSync.reload);
