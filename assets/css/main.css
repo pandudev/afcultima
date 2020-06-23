@@ -2977,6 +2977,21 @@ strong {
 .slick-track {
   height: 100% !important; }
 
+.float-icon {
+  position: fixed;
+  right: 20px;
+  width: 50px;
+  height: 50px; }
+  .float-icon img {
+    width: 100%; }
+  .float-icon--whatsapp {
+    bottom: 80px; }
+  .float-icon--gotop {
+    background-color: #f3e992;
+    bottom: 20px; }
+    .float-icon--gotop img {
+      transform: rotate(-90deg); }
+
 h1,
 h2,
 h3,
@@ -3983,3 +3998,31 @@ h4 {
       .product--banner {
         height: 450px;
         text-align: right; } }
+
+.news {
+  color: #2f5a66;
+  background-color: #e7f4f8; }
+  .news__item__thumbnail {
+    height: 200px;
+    width: 100%; }
+    .news__item__thumbnail img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .news__item__detail {
+    background-color: #ffffff; }
+    .news__item__detail h5 {
+      font-weight: 600;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+    .news__item__detail p {
+      font-size: 14px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      text-overflow: ellipsis;
+      overflow: hidden; }
