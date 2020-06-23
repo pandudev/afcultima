@@ -3091,7 +3091,8 @@ h4 {
       display: block; }
     .nav--main > ul > li a {
       padding: 10px;
-      color: #eeeeee;
+      color: #ffffff;
+      font-size: 16px;
       height: 100%; }
       .nav--main > ul > li a:hover {
         color: #ffffff; }
@@ -3727,6 +3728,11 @@ h4 {
   .business-testimonial__content__item {
     height: 100%;
     background-color: #e7f4f8; }
+    .business-testimonial__content__item__photo {
+      width: 100%;
+      height: 200px;
+      -o-object-fit: cover;
+         object-fit: cover; }
 
 .business-form {
   background-color: #e7f4f8;
@@ -3955,6 +3961,11 @@ h4 {
       .product--testimonial__content__item.utsukushhii {
         background-color: #a7367d;
         color: #ffffff; }
+      .product--testimonial__content__item__photo {
+        width: 100%;
+        height: 200px;
+        -o-object-fit: cover;
+           object-fit: cover; }
   .product--banner {
     background: url("./../img/sop-banner-2.jpg") no-repeat;
     background-size: cover;
